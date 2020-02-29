@@ -14,6 +14,7 @@ install:
 			google.golang.org/grpc	\
 			github.com/gogo/protobuf/protoc-gen-gogoslick	\
 			github.com/gogo/protobuf/gogoproto	\
+			github.com/go-sql-driver/mysql	\
 			github.com/DATA-dog/go-sqlmock	\
 			github.com/onsi/ginkgo/ginkgo	\
 			github.com/onsi/gomega/...	\
