@@ -3,9 +3,9 @@ START=${pwd}
 
 protoc:
 	protoc -I pb/v1/ \
-	--go_out= plugins=grpc:pb	\
-	--gogrpcmock)out=:pb	\
-	  pb/v1/*proto
+    	--go_out=plugins=grpc:pb \
+    	--gogrpcmock_out=:pb \
+    	pb/v1/*.proto
 
 install:
 	go get -u \
