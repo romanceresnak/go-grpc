@@ -30,6 +30,5 @@ func init() {
 				sl.ReportError("ConfirmPassword", "confirmpassword", "ConfirmPassword", "valid-confirmpassword", "")
 			}
 		}
-
-	})
+	}, CreateUserRequest{})
 }

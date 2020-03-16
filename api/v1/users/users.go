@@ -15,6 +15,9 @@ func GetRoutes() pb.V1UsersServer {
 func (h *grpcHandler) Create(ctx context.Context, req *pb.CreateUserRequest) (res *pb.UserReply, err error) {
 	res = new(pb.UserReply)
 
+	if err = pb.Validate(req); err != nil {
+
+	}
 	return res, nil
 }
 
